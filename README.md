@@ -32,10 +32,6 @@ In short, this file prepares the container to run a Django app on port 8000.
 
 The command in the image is:
 
-```bash
-docker compose up --build
-```
-
 ### Simple Explanation:
 
 This command is used to **start** and **build** all the services (like web apps, databases, etc.) defined in a `docker-compose.yml` file. Here's what each part does:
