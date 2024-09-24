@@ -27,3 +27,16 @@ The image shows a **Dockerfile**, which is used to create a container for a Pyth
    - When the container starts, this command runs the Django web server (`manage.py runserver`), making the app accessible.
 
 In short, this file prepares the container to run a Django app on port 8000.
+
+![สกรีนช็อต 2024-09-24 221126](https://github.com/user-attachments/assets/faa8c242-c1b4-4910-bec3-47cf453c807d)
+
+This command is used to start and build all the services (like web apps, databases, etc.) defined in a docker-compose.yml file. Here's what each part does:
+
+docker compose up:
+
+This starts all the containers defined in your docker-compose.yml file. It brings the entire environment up, running all services (such as databases, web servers, etc.) at once.
+--build:
+
+This option tells Docker to rebuild the images before starting the containers, even if the image already exists. It ensures any changes in the code or the Dockerfile are applied.
+
+
