@@ -30,13 +30,27 @@ In short, this file prepares the container to run a Django app on port 8000.
 
 ![สกรีนช็อต 2024-09-24 221126](https://github.com/user-attachments/assets/faa8c242-c1b4-4910-bec3-47cf453c807d)
 
-This command is used to start and build all the services (like web apps, databases, etc.) defined in a docker-compose.yml file. Here's what each part does:
+The command in the image is:
 
-docker compose up:
+```bash
+docker compose up --build
+```
 
-This starts all the containers defined in your docker-compose.yml file. It brings the entire environment up, running all services (such as databases, web servers, etc.) at once.
---build:
+### Simple Explanation:
 
-This option tells Docker to rebuild the images before starting the containers, even if the image already exists. It ensures any changes in the code or the Dockerfile are applied.
+This command is used to **start** and **build** all the services (like web apps, databases, etc.) defined in a `docker-compose.yml` file. Here's what each part does:
+
+1. **`docker compose up`**:  
+   - This starts all the containers defined in your `docker-compose.yml` file. It brings the entire environment up, running all services (such as databases, web servers, etc.) at once.
+
+2. **`--build`**:  
+   - This option tells Docker to **rebuild** the images before starting the containers, even if the image already exists. It ensures any changes in the code or the Dockerfile are applied.
+
+### Example Use Case:
+If you have a web app and a database, and you made changes to your app code, running `docker compose up --build` will:
+- Rebuild the app's Docker image with the new changes.
+- Start both the app and the database together in the right configuration. 
+
+It's useful for ensuring your containers always run with the latest version of your code.
 
 
