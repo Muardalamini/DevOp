@@ -28,9 +28,10 @@ The image shows a **Dockerfile**, which is used to create a container for a Pyth
 
 In short, this file prepares the container to run a Django app on port 8000.
 
-![สกรีนช็อต 2024-09-24 221126](https://github.com/user-attachments/assets/faa8c242-c1b4-4910-bec3-47cf453c807d)
+
 
 The command in the image is:
+![สกรีนช็อต 2024-09-24 221126](https://github.com/user-attachments/assets/faa8c242-c1b4-4910-bec3-47cf453c807d)
 
 ### Simple Explanation:
 
